@@ -1,0 +1,12 @@
+package com.example;
+
+interface OperacoesMatematicas {
+    double somar(double a, double b);
+    double subtrair(double a, double b);
+    double multiplicar(double a, double b);
+    double dividir(double a, double b) throws ArithmeticException;
+
+    default double potencia(double base, double expoente) {
+        return Math.pow(base, expoente);
+    }
+}
